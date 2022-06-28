@@ -1,0 +1,16 @@
+{
+  "extends": "./tsconfig.base.json",
+  "include": [
+    "packages",
+    "./scripts",
+  ],
+  "exclude": [
+    "node_modules",
+    "**/**/*.md",
+    "**/dist",
+  ],
+  "compilerOptions": {
+    "paths": {
+    }
+  }
+}

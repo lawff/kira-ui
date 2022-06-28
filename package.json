@@ -1,0 +1,44 @@
+{
+  "name": "@kira-ui/monorepo",
+  "version": "0.0.1",
+  "private": true,
+  "packageManager": "pnpm@7.1.7",
+  "description": "A react ui library with hooks.",
+  "license": "MIT",
+  "author": "lawliet",
+  "scripts": {
+    "build": "nr clean && esno scripts/build",
+    "build:all": "nr clean && npm run build all",
+    "lint": "eslint .",
+    "clean": "rimraf packages/*/{esm,cjs,lib,dist} packages/**/*.tsbuildinfo",
+    "lint:fix": "nr lint --fix",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "react": "^18.2.0"
+  },
+  "devDependencies": {
+    "@antfu/ni": "^0.16.3",
+    "@lawlietff/eslint-config": "^0.0.9",
+    "@rollup/plugin-alias": "^3.1.9",
+    "@rollup/plugin-commonjs": "^22.0.1",
+    "@rollup/plugin-json": "^4.1.0",
+    "@rollup/plugin-node-resolve": "^13.3.0",
+    "@rollup/plugin-replace": "^4.0.0",
+    "@types/fs-extra": "^9.0.13",
+    "@types/rimraf": "^3.0.2",
+    "@types/yargs": "^17.0.10",
+    "esbuild": "^0.14.47",
+    "eslint": "^8.18.0",
+    "esno": "^0.16.3",
+    "execa": "^6.1.0",
+    "fs-extra": "^10.1.0",
+    "rimraf": "^3.0.2",
+    "rollup": "^2.75.7",
+    "rollup-plugin-esbuild": "^4.9.1",
+    "rollup-plugin-node-externals": "^4.1.0",
+    "rollup-plugin-visualizer": "^5.6.0",
+    "typescript": "^4.7.4",
+    "yargs": "^17.5.1"
+  }
+}

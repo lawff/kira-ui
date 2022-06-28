@@ -1,0 +1,29 @@
+{
+  "name": "@kira-ui/hooks",
+  "version": "0.0.1",
+  "description": "Hooks of kira-ui",
+  "keywords": [
+    "react",
+    "hooks",
+    "utils"
+  ],
+  "license": "MIT",
+  "author": "lawliet",
+  "main": "./cjs/index.js",
+  "module": "./esm/index.js",
+  "types": "./lib/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./lib/index.d.ts",
+      "require": "./cjs/index.js",
+      "import": "./esm/index.js"
+    },
+    "./*": "./*"
+  },
+  "sideEffects": false,
+  "peerDependencies": {
+    "react": ">=16.8.0"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}
