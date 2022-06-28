@@ -9,6 +9,7 @@
   "scripts": {
     "build": "nr clean && esno scripts/build",
     "build:all": "nr clean && npm run build all",
+    "release": "bumpp package.json packages/**/package.json",
     "lint": "eslint .",
     "clean": "rimraf packages/*/{esm,cjs,lib,dist} packages/**/*.tsbuildinfo",
     "lint:fix": "nr lint --fix",
@@ -28,6 +29,7 @@
     "@types/fs-extra": "^9.0.13",
     "@types/rimraf": "^3.0.2",
     "@types/yargs": "^17.0.10",
+    "bumpp": "^8.2.1",
     "esbuild": "^0.14.47",
     "eslint": "^8.18.0",
     "esno": "^0.16.3",
