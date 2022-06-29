@@ -1,0 +1,27 @@
+{
+  "name": "@kira-ui/core",
+  "version": "0.0.1",
+  "description": "self use React components library.",
+  "keywords": [
+    "react",
+    "ui",
+    "components",
+    "frontend",
+    "emotion"
+  ],
+  "license": "MIT",
+  "author": "lawliet",
+  "main": "cjs/index.js",
+  "module": "esm/index.js",
+  "types": "lib/index.d.ts",
+  "sideEffects": false,
+  "peerDependencies": {
+    "@kira-ui/hooks": "0.0.3",
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0"
+  },
+  "dependencies": {
+    "@kira-ui/styles": "workspace:*"
+  },
+  "devDependencies": {}
+}
