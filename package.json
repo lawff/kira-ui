@@ -1,6 +1,6 @@
 {
   "name": "@kira-ui/monorepo",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "private": true,
   "packageManager": "pnpm@7.1.7",
   "description": "A react ui library with hooks.",
