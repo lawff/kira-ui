@@ -77,6 +77,7 @@ export const Prism: PrismComponent = forwardRef<HTMLDivElement, PrismProps>(
       <Box className={cx(classes.root, className)} ref={ref} {...others}>
         {!noCopy && (
           <ActionIcon
+            className={classes.copy}
             aria-label={clipboard.copied ? copiedLabel : copyLabel}
             onClick={() => clipboard.copy(code)}
           >
