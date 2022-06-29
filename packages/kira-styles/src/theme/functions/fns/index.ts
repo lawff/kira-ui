@@ -5,6 +5,8 @@ import { fontStyles } from './font-styles'
 import { variant } from './variant'
 import { focusStyles } from './focus-styles'
 import { hover } from './hover'
+import { themeColor } from './theme-color'
+import { radius } from './radius'
 
 export const fns = {
   smallerThan,
@@ -15,4 +17,6 @@ export const fns = {
   variant,
   focusStyles,
   hover,
+  themeColor,
+  radius,
 } as const
