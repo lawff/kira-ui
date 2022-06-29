@@ -11,7 +11,7 @@ export const _DEFAULT_THEME: KiraThemeBase = {
     light: 6,
     dark: 8,
   },
-  focusRing: 'auto',
+  focusRing: 'never',
   loader: 'oval',
   dateFormat: 'MMMM D, YYYY',
   colorScheme: 'light',

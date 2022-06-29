@@ -16,7 +16,7 @@
   "types": "lib/index.d.ts",
   "sideEffects": false,
   "peerDependencies": {
-    "@kira-ui/hooks": "0.0.3",
+    "@kira-ui/hooks": ">=0.0.3",
     "react": ">=16.8.0",
     "react-dom": ">=16.8.0"
   },

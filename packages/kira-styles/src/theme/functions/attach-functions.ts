@@ -10,6 +10,9 @@ export function attachFunctions(themeBase: KiraThemeBase): KiraTheme {
       rgba: fns.rgba,
       size: fns.size,
       fontStyles: fns.fontStyles(themeBase),
+      variant: fns.variant(themeBase),
+      focusStyles: fns.focusStyles(themeBase),
+      hover: fns.hover,
     },
   }
 }

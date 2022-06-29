@@ -1,4 +1,5 @@
 export * from './types'
+export * from './utils'
 
 export { DEFAULT_THEME, KIRA_COLORS, KIRA_SIZES } from './default-theme'
 
