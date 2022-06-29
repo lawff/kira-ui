@@ -2,8 +2,8 @@
 
 forks of [mantine](https://github.com/mantinedev/mantine), for self use.
 
-[![NPM](https://img.shields.io/npm/l/@kira-ui/hooks)](https://github.com/lawff/kira-ui/blob/main/LICENSE)
-[![npm](https://img.shields.io/npm/v/@kira-ui/hooks)](https://www.npmjs.com/package/@kira-ui/core)
+[![NPM](https://img.shields.io/npm/l/@kira-ui/core)](https://github.com/lawff/kira-ui/blob/main/LICENSE)
+[![npm](https://img.shields.io/npm/v/@kira-ui/core)](https://www.npmjs.com/package/@kira-ui/core)
 [![npm](https://img.shields.io/npm/dm/@kira-ui/hooks)](https://www.npmjs.com/package/@kira-ui/hooks)
 
 ## Packages

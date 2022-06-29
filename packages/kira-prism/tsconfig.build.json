@@ -1,0 +1,27 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "include": ["./src", "../../scripts/config/types"],
+  "exclude": [
+    "./lib",
+    "./esm",
+    "./cjs",
+    "**/*.test.ts",
+  ],
+  "compilerOptions": {
+    "rootDir": "src",
+    "baseUrl": ".",
+    "outDir": "lib",
+    "declaration": true,
+    "declarationMap": true,
+    "declarationDir": "lib",
+    "composite": true,
+    "paths": {
+      "@kira-ui/core": ["../kira-core/src"],
+      "@kira-ui/hooks": ["../kira-hooks/src"],
+    }
+  },
+  "references": [
+    { "path": "../kira-core/tsconfig.build.json" },
+    { "path": "../kira-hooks/tsconfig.build.json" }
+  ]
+}

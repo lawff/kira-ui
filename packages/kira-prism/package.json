@@ -1,13 +1,12 @@
 {
-  "name": "@kira-ui/core",
-  "version": "0.0.4",
-  "description": "self use React components library.",
+  "name": "@kira-ui/prism",
+  "version": "0.0.1",
+  "description": "Code highlight with kira-ui theme",
   "keywords": [
     "react",
-    "ui",
-    "components",
-    "frontend",
-    "emotion"
+    "code",
+    "highlight",
+    "syntax-highlight"
   ],
   "license": "MIT",
   "author": "lawliet",
@@ -16,12 +15,12 @@
   "types": "lib/index.d.ts",
   "sideEffects": false,
   "peerDependencies": {
-    "@kira-ui/hooks": ">=0.0.3",
+    "@kira-ui/core": ">=0.0.5",
+    "@kira-ui/hooks": ">=0.0.5",
     "react": ">=16.8.0",
     "react-dom": ">=16.8.0"
   },
   "dependencies": {
-    "@kira-ui/styles": "workspace:*",
-    "@radix-ui/react-scroll-area": "^0.1.4"
+    "prism-react-renderer": "^1.3.3"
   }
 }
