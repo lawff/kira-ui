@@ -27,6 +27,7 @@
     "@rollup/plugin-node-resolve": "^13.3.0",
     "@rollup/plugin-replace": "^4.0.0",
     "@types/fs-extra": "^9.0.13",
+    "@types/react": "^18.0.14",
     "@types/rimraf": "^3.0.2",
     "@types/yargs": "^17.0.10",
     "bumpp": "^8.2.1",

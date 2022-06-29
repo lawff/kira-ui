@@ -8,6 +8,11 @@
     "node_modules",
     "**/**/*.md",
     "**/dist",
+    "public",
+    ".cache",
+    "packages/kira-*/esm/**/*",
+    "packages/kira-*/lib/**/*",
+    "packages/kira-*/cjs/**/*",
   ],
   "compilerOptions": {
     "paths": {

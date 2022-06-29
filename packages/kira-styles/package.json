@@ -1,0 +1,30 @@
+{
+  "name": "@kira-ui/styles",
+  "version": "0.0.1",
+  "description": "kira-ui css-in-js styles engine, based on emotion",
+  "keywords": [
+    "react",
+    "ui",
+    "frontend",
+    "emotion",
+    "css-in-js"
+  ],
+  "license": "MIT",
+  "author": "lawliet",
+  "main": "cjs/index.js",
+  "module": "esm/index.js",
+  "types": "lib/index.d.ts",
+  "sideEffects": false,
+  "peerDependencies": {
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0"
+  },
+  "dependencies": {
+    "@emotion/cache": "^11.9.3",
+    "@emotion/react": "^11.9.3",
+    "@emotion/serialize": "^1.0.4",
+    "@emotion/utils": "^1.1.0",
+    "clsx": "^1.1.1",
+    "csstype": "^3.1.0"
+  }
+}
