@@ -7,6 +7,7 @@ import { focusStyles } from './focus-styles'
 import { hover } from './hover'
 import { themeColor } from './theme-color'
 import { radius } from './radius'
+import { primaryShade } from './primary-shade'
 
 export const fns = {
   smallerThan,
@@ -19,4 +20,5 @@ export const fns = {
   hover,
   themeColor,
   radius,
+  primaryShade,
 } as const

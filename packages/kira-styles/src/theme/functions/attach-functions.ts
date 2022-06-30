@@ -14,6 +14,7 @@ export function attachFunctions(themeBase: KiraThemeBase): KiraTheme {
       fontStyles: fns.fontStyles(themeBase),
       variant: fns.variant(themeBase),
       focusStyles: fns.focusStyles(themeBase),
+      primaryShade: fns.primaryShade(themeBase),
       hover: fns.hover,
     },
   }
