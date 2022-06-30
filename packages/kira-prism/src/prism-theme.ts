@@ -92,7 +92,7 @@ export const dark = (theme: KiraTheme): PrismTheme => ({
 export const light = (theme: KiraTheme): PrismTheme => ({
   plain: {
     color: theme.colors.gray[9],
-    backgroundColor: theme.fn.rgba(theme.colors.gray[0], 0.65),
+    backgroundColor: theme.fn.rgba(theme.colors.gray[0], 0.75),
   },
 
   styles: [

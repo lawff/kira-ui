@@ -24,6 +24,7 @@ export default createStyles((theme, { colorScheme, native, maxLineSize }: PrismS
     padding: `${theme.spacing.sm}px 0`,
     marginTop: 0,
     marginBottom: 0,
+    outline: 'none',
   },
 
   copy: {

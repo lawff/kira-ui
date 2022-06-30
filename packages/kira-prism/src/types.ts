@@ -14,6 +14,12 @@ export interface PrismSharedProps {
   /** Copy button tooltip */
   copyLabel?: string
 
+  /** code can edit, defaults to false */
+  edit?: boolean
+
+  /** preview the result, defaults to false */
+  preview?: boolean
+
   /** Copy button tooltip in copied state */
   copiedLabel?: string
 
