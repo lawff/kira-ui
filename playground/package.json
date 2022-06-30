@@ -1,0 +1,29 @@
+{
+  "name": "@kira-ui/playground",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "next": "12.2.0",
+    "react": "^18.2.0",
+    "react-dom": "18.2.0",
+    "@kira-ui/core": "workspace:*",
+    "@kira-ui/styles": "workspace:*",
+    "@kira-ui/prism": "workspace:*",
+    "@kira-ui/hooks": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/node": "18.0.0",
+    "@types/react": "^18.0.14",
+    "@types/react-dom": "18.0.5",
+    "eslint": "^8.18.0",
+    "eslint-config-next": "12.2.0",
+    "next-transpile-modules": "^9.0.0",
+    "typescript": "^4.7.4"
+  }
+}

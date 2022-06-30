@@ -13,7 +13,8 @@
     "lint": "eslint .",
     "clean": "rimraf packages/*/{esm,cjs,lib,dist} packages/**/*.tsbuildinfo",
     "lint:fix": "nr lint --fix",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "play": "cd playground && nr dev"
   },
   "dependencies": {
     "react": "^18.2.0"
