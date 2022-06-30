@@ -1,6 +1,6 @@
 {
   "name": "@kira-ui/prism",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "Code highlight with kira-ui theme",
   "keywords": [
     "react",
