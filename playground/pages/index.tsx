@@ -2,11 +2,17 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import { Prism } from '@kira-ui/prism'
 
-const demoCode = `import { Text } from '@kira-ui/core'
+const demoCode = `import { Grid } from '@kira-ui/core'
 import { useClipboard } from '@kira-ui/hooks';
 
 function Demo() {
-  return <Text>Hello</Text>
+  return <Grid grow>
+  <Grid.Col span={4}>1</Grid.Col>
+  <Grid.Col span={4}>2</Grid.Col>
+  <Grid.Col span={4}>3</Grid.Col>
+  <Grid.Col span={4}>4</Grid.Col>
+  <Grid.Col span={4}>5</Grid.Col>
+</Grid>
 }
 
 render(<Demo />)
