@@ -1,6 +1,6 @@
 {
   "name": "@kira-ui/styles",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "description": "kira-ui css-in-js styles engine, based on emotion",
   "keywords": [
     "react",
