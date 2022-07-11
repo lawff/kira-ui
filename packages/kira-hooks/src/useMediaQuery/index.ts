@@ -1,4 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
+import type { ConfigurableWindow } from '../_configurable'
+import { defaultWindow } from '../_configurable'
 
 type MediaQueryCallback = (event: { matches: boolean; media: string }) => void
 
@@ -17,23 +19,32 @@ function attachMediaListener(query: MediaQueryList, callback: MediaQueryCallback
   }
 }
 
-function getInitialValue(query: string, initialValue?: boolean) {
+function getInitialValue(query: string, initialValue?: boolean, w?: Window) {
   if (initialValue !== undefined)
     return initialValue
 
-  if (typeof window !== 'undefined' && 'matchMedia' in window)
+  if (typeof w !== 'undefined' && 'matchMedia' in w)
     return window.matchMedia(query).matches
 
   return false
 }
 
-export function useMediaQuery(query: string, initialValue?: boolean) {
-  const [matches, setMatches] = useState(getInitialValue(query, initialValue))
+/**
+ * Reactive Media Query.
+ *
+ * @param query
+ * @param options
+ */
+export function useMediaQuery(query: string, options: ConfigurableWindow & { initialValue?: boolean } = {}) {
+  const { window = defaultWindow } = options
+  const isSupported = Boolean(window && 'matchMedia' in window && typeof window!.matchMedia === 'function')
+  const [matches, setMatches] = useState(getInitialValue(query, options.initialValue, window))
   const queryRef = useRef<MediaQueryList>()
 
   useEffect(() => {
-    if ('matchMedia' in window) {
+    if (isSupported) {
       queryRef.current = window.matchMedia(query)
+      // TODO: dup
       setMatches(queryRef.current.matches)
       return attachMediaListener(queryRef.current, event => setMatches(event.matches))
     }
