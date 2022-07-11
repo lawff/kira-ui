@@ -46,14 +46,14 @@ export function useTitle(
       document.head?.querySelector('title'),
       () => {
         if (document && document.title !== title)
-          setTitle(titleTemplate.replace('%s', document.title))
+          setTitle(document.title)
       },
       { childList: true },
     )
   }
 
   return {
-    title,
+    title: titleTemplate.replace('%s', title),
     setTitle,
   }
 }
